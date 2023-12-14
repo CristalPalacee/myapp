@@ -3,31 +3,56 @@ import HeroImage from "../assets/img/hero.png"
 import { kelasTerbaru, dataSwiper } from "../data"
 import { useNavigate } from "react-router-dom"
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-
-
-
 // import required modules
 import { Pagination } from 'swiper/modules';
+import gsap from "gsap";
+import { useRef, useEffect } from "react";
+import TextPlugin from "gsap/TextPlugin";
+import Aos from "aos";
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+
+gsap.registerPlugin(TextPlugin)
 
 
 const HomePages = () => {
+
+
   let navigate = useNavigate()
+  let line1 = useRef(null)
+  let line2 = useRef(null)
+
+
+  useEffect(() => {
+    Aos.init({
+      once: true,
+      duration: 2000
+    })
+    gsap.to([line2],{ duration: 9, text:"NAUFAL.R  04 JUNI 2005"} )
+    gsap.to([line1], {
+      duration: 8,
+      text: "WECOME <br /> <span>TO</span> <br />MY WEBSITE"
+    })
+  }, [line1])
+
+
+
+
   return (
     <div className="homepage">
       <header className="w-100 min-vh-100 d-flex align-items-center">
           <Container>
               <Row className="header-box d-flex align-items-center pt-lg">
+               
                 <Col lg="6">
-                <h1 className="mb-4">WECOME <br /> <span>TO</span> <br />MY WEBSITE</h1>
-                <p className="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nemo labore debitis delectus quas non a distinctio.</p>
+                <h1 ref={el => (line1 = el)} className="mb-4"></h1>
+                <p ref={el => (line2 = el)} className="mb-4 fw-bold">.</p>
                 <button className="btn btn-outline-danger btn-lg rounded">LIHAT PROJECT</button>
-              
                 </Col>
-              <Col lg="6" className="pt-lg-0 pt-5">  <img src={HeroImage} alt="" />
+            
+              <Col   lg="6" className="pt-lg-0 pt-5">  <img src={HeroImage} alt="" data-aos="fade-down-left"/>
               </Col>
               </Row>
         </Container>
@@ -36,8 +61,8 @@ const HomePages = () => {
           
         <Container>
           <Row>
-            <Col><h1 className="text-center fw-bold">My Skill</h1></Col>
-            <p className="text-center fw-bold mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed repellat consectetur enim tempora </p>
+            <Col><h1 className="text-center fw-bold"  data-aos="zoom-in-down">My Skill</h1></Col>
+            <p  data-aos="zoom-in-down" className="text-center fw-bold mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed repellat consectetur enim tempora </p>
           </Row>
           <Row>
          
@@ -45,7 +70,7 @@ const HomePages = () => {
               return (
                 <Col key={kelas.id}>
                   <img src={kelas.image} alt="" />
-                  <h5 className="px-3">{kelas.title}</h5>
+                  <h5 className="px-3 text-center">{kelas.title}</h5>
                 </Col>
               )
             })}

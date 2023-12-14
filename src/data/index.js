@@ -1,12 +1,6 @@
-import KelasImage1 from "../assets/img/kelas/kelas-1.jpg";
-import KelasImage2 from "../assets/img/kelas/kelas-2.jpg";
-import KelasImage3 from "../assets/img/kelas/kelas-3.jpg";
-import KelasImage4 from "../assets/img/kelas/kelas-4.jpg";
-import KelasImage5 from "../assets/img/kelas/kelas-5.jpg";
-import KelasImage6 from "../assets/img/kelas/kelas-6.jpg";
-import KelasImage7 from "../assets/img/kelas/kelas-7.jpg";
-import KelasImage8 from "../assets/img/kelas/kelas-8.jpg";
-import KelasImage9 from "../assets/img/kelas/kelas-9.jpg";
+import KelasImage1 from "../assets/img/kelas/kelas-1.png";
+import KelasImage2 from "../assets/img/kelas/kelas-2.png";
+import KelasImage3 from "../assets/img/kelas/kelas-3.png";
 
 import People1 from "../assets/img/testimonial/people-1.jpg";
 import People2 from "../assets/img/testimonial/people-2.jpg";
@@ -36,7 +30,7 @@ export const semuaKelas = [
     star3: "fa-solid fa-star",
     star4: "fa-solid fa-star",
     star5: "fa-solid fa-star-half-stroke",
-    title: "Character Illustration with Adobe Illustrator",
+    title: "REACT JS",
     price: "Rp. 300.000",
     buy: "Beli Kelas",
     delay: "1300",
@@ -62,89 +56,12 @@ export const semuaKelas = [
     star3: "fa-solid fa-star",
     star4: "fa-solid fa-star",
     star5: "fa-solid fa-star",
-    title: "Mastering Web Developer Bootstrap 5",
+    title: "JAVASCRIPT",
     price: "Rp. 280.000",
     buy: "Beli Kelas",
     delay: "1900",
   },
-  {
-    id: 4,
-    image: KelasImage4,
-    star1: "fa-solid fa-star",
-    star2: "fa-solid fa-star",
-    star3: "fa-solid fa-star",
-    star4: "fa-solid fa-star",
-    star5: "fa-solid fa-star",
-    title: "Mastering Logo with Adobe Illustrator",
-    price: "Rp. 420.000",
-    buy: "Beli Kelas",
-    delay: "",
-  },
-  {
-    id: 5,
-    image: KelasImage5,
-    star1: "fa-solid fa-star",
-    star2: "fa-solid fa-star",
-    star3: "fa-solid fa-star",
-    star4: "fa-solid fa-star",
-    star5: "fa-solid fa-star",
-    title: "3D Modelling for Beginner with 3D Blender",
-    price: "Rp. 380.000",
-    buy: "Beli Kelas",
-    delay: "300",
-  },
-  {
-    id: 6,
-    image: KelasImage6,
-    star1: "fa-solid fa-star",
-    star2: "fa-solid fa-star",
-    star3: "fa-solid fa-star",
-    star4: "fa-solid fa-star",
-    star5: "fa-solid fa-star",
-    title: "Mastering Icon Design with Adobe Illustrator",
-    price: "Rp. 300.000",
-    buy: "Beli Kelas",
-    delay: "600",
-  },
-  {
-    id: 7,
-    image: KelasImage7,
-    star1: "fa-solid fa-star",
-    star2: "fa-solid fa-star",
-    star3: "fa-solid fa-star",
-    star4: "fa-solid fa-star",
-    star5: "fa-solid fa-star-half-stroke",
-    title: "Design Vektor with Corel Draw CC for Beginner",
-    price: "Rp. 340.000",
-    buy: "Beli Kelas",
-    delay: "",
-  },
-  {
-    id: 8,
-    image: KelasImage8,
-    star1: "fa-solid fa-star",
-    star2: "fa-solid fa-star",
-    star3: "fa-solid fa-star",
-    star4: "fa-solid fa-star",
-    star5: "fa-solid fa-star-half-stroke",
-    title: "UI UX Design with Adobe XD for Beginner",
-    price: "Rp. 400.000",
-    buy: "Beli Kelas",
-    delay: "300",
-  },
-  {
-    id: 9,
-    image: KelasImage9,
-    star1: "fa-solid fa-star",
-    star2: "fa-solid fa-star",
-    star3: "fa-solid fa-star",
-    star4: "fa-solid fa-star",
-    star5: "fa-solid fa-star-half-stroke",
-    title: "Mastering Mobile Developer with Flutter",
-    price: "Rp. 320.000",
-    buy: "Beli Kelas",
-    delay: "600",
-  },
+
 ];
 
 export const kelasTerbaru = [
@@ -156,7 +73,7 @@ export const kelasTerbaru = [
     star3: "fa-solid fa-star",
     star4: "fa-solid fa-star",
     star5: "fa-solid fa-star-half-stroke",
-    title: "Character Illustration with Adobe Illustrator",
+    title: "REACT JAVASCRIPT",
     price: "Rp. 300.000",
     buy: "Beli Kelas",
     delay: "",
@@ -169,7 +86,7 @@ export const kelasTerbaru = [
     star3: "fa-solid fa-star",
     star4: "fa-solid fa-star",
     star5: "fa-solid fa-star",
-    title: "UI UX Website Design for Beginner with Figma",
+    title: "HTML",
     price: "Rp. 340.000",
     buy: "Beli Kelas",
     delay: "200",
@@ -182,50 +99,12 @@ export const kelasTerbaru = [
     star3: "fa-solid fa-star",
     star4: "fa-solid fa-star",
     star5: "fa-solid fa-star",
-    title: "Mastering Web Developer Bootstrap 5",
+    title: "JAVASCRIPT",
     price: "Rp. 280.000",
     buy: "Beli Kelas",
     delay: "400",
   },
-  {
-    id: 4,
-    image: KelasImage4,
-    star1: "fa-solid fa-star",
-    star2: "fa-solid fa-star",
-    star3: "fa-solid fa-star",
-    star4: "fa-solid fa-star",
-    star5: "fa-solid fa-star",
-    title: "Mastering Logo with Adobe Illustrator",
-    price: "Rp. 420.000",
-    buy: "Beli Kelas",
-    delay: "",
-  },
-  {
-    id: 5,
-    image: KelasImage5,
-    star1: "fa-solid fa-star",
-    star2: "fa-solid fa-star",
-    star3: "fa-solid fa-star",
-    star4: "fa-solid fa-star",
-    star5: "fa-solid fa-star",
-    title: "3D Modelling for Beginner with 3D Blender",
-    price: "Rp. 380.000",
-    buy: "Beli Kelas",
-    delay: "200",
-  },
-  {
-    id: 6,
-    image: KelasImage6,
-    star1: "fa-solid fa-star",
-    star2: "fa-solid fa-star",
-    star3: "fa-solid fa-star",
-    star4: "fa-solid fa-star",
-    star5: "fa-solid fa-star",
-    title: "Mastering Icon Design with Adobe Illustrator",
-    price: "Rp. 300.000",
-    buy: "Beli Kelas",
-    delay: "400",
-  },
+ 
 ];
 
 export const testimonial = [

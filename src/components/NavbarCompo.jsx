@@ -2,9 +2,11 @@ import { Navbar, Container, Nav } from "react-bootstrap"
 import { NavLink } from "react-router-dom"
 import { navLinks } from "../data/index.js"
 import { useState, useEffect } from "react"
-useState
+
 
 const NavbarCompo = () => {
+
+  
 
       const [changeColor, setChangeColor] = useState(false);
       const changeBackgroundColor = () =>{
@@ -20,7 +22,8 @@ const NavbarCompo = () => {
         window.addEventListener("scroll", changeBackgroundColor)
       })
   return (
-    <div>
+    <div  
+  >
     <Navbar expand="lg" className={changeColor ? "color-active" : ""}>
       <Container>
         <Navbar.Brand href="#home" className="font">PORTF<span>OLIO</span> </Navbar.Brand>
